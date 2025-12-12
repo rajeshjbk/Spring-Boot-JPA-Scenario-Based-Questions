@@ -59,7 +59,7 @@ public class ProductTestRunner implements CommandLineRunner {
 					Integer id = Integer.parseInt(sc.nextLine());
 
 					Optional<Product> productById = productService.getProductById(id);
-					System.out.println(productById);
+					System.out.println(productById.get());
 					break;
 
 				case 3:
