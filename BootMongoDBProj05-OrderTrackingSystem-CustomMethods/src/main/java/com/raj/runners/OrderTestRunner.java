@@ -111,7 +111,7 @@ public class OrderTestRunner implements CommandLineRunner {
 					System.out.print("Enter Order City: ");
 					city = sc.nextLine();
 					int cityWise = orderService.findByCity(city).size();
-					System.out.println("Total Orders in City "+city+" : "+cityWise);
+					System.out.println("Orders from City "+city+" : "+cityWise);
 					break;
 					
 				case 10:
