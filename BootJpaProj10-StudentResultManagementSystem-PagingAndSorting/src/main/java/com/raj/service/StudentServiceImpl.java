@@ -41,5 +41,4 @@ public class StudentServiceImpl implements IStudentService {
 		Iterable<Student> all = studentRepo.findAll(sort);
 		return all;
 	}
-
 }
