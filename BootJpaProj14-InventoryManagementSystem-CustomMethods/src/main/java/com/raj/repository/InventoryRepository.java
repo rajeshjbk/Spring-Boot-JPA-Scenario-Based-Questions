@@ -58,12 +58,10 @@ public interface InventoryRepository extends JpaRepository<Inventory, Integer> {
 
 	@Query("delete from Inventory where available=false")
 	@Modifying
-	@Transactional
 	int deleteUnavailableItems();
 
 	@Query("delete from Inventory where quantity= ?1")
 	@Modifying
-	@Transactional
 	int deleteItemsBelowQty(int qty);
 
 	//================ NATIVE QUERY OPERATIONS ==============================
