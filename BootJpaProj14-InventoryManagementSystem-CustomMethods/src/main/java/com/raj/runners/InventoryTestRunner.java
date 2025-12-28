@@ -24,20 +24,20 @@ public class InventoryTestRunner implements CommandLineRunner {
 				System.out.println("\n============== Inventory Management System ==============");
 				System.out.println("1. Add New Item.");
 				System.out.println("2. Fetch items by category.");
-				System.out.println("3. Fetch available items");
+				System.out.println("3. Fetch available items.");
 				System.out.println("4. Fetch items with quantity less than given value.");
-				System.out.println("5. Search items by product name (LIKE)");
+				System.out.println("5. Search items by product name (LIKE).");
 				System.out.println("6. Fetch items within a price range.");
-				System.out.println("7. Count total items");
-				System.out.println("8. Get average price of items");
-				System.out.println("9. Get maximum priced item");
+				System.out.println("7. Count total items.");
+				System.out.println("8. Get average price of items.");
+				System.out.println("9. Get maximum priced item.");
 				System.out.println("10.Update quantity after purchase.");
-				System.out.println("11.Increase price by percentage for a category");
+				System.out.println("11.Increase price by percentage for a category.");
 				System.out.println("12.Mark items unavailable if quantity is zero.");
 				System.out.println("13.Delete unavailable items.");
 				System.out.println("14.Delete items below a certain quantity.");
-				System.out.println("15.Fetch inventory sorted by quantity");
-				System.out.println("16.Fetch top 3 most expensive items");
+				System.out.println("15.Fetch inventory sorted by quantity.");
+				System.out.println("16.Fetch top 3 most expensive items.");
 				System.out.println("17.Exit.");
 				
 				System.out.print("\nEnter Your Choice: ");
