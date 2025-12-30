@@ -1,0 +1,19 @@
+package com.raj.util;
+
+import java.security.SecureRandom;
+import java.time.LocalDateTime;
+
+public class OtpGenerator {
+
+	private static final SecureRandom random = new SecureRandom();
+
+	public static String generateOtp() {
+		int otp = 100000 + random.nextInt(900000);
+		return String.valueOf(otp);
+	}
+
+	public static LocalDateTime generateExpiryTime() {
+		return LocalDateTime.now().plusMinutes(5);
+	}
+
+}
