@@ -18,11 +18,11 @@ public interface IStudentMgmtService {
 	
 	String updateResult(int rollNo, String newResult);
 	
-	List<Student> getPassedStudents();
+	List<Student> getPassedStudents(String pass);
 	
-	List<Student> getFailedStudents();
+	List<Student> getFailedStudents(String fail);
 	
-	List<Student> getStudentsAbove75();
+	List<Student> getStudentsAbove75(double max);
 	
 	long countTotalStudents();
 	
@@ -32,6 +32,6 @@ public interface IStudentMgmtService {
 	
 	Student getTopperStudent();
 	
-	Double getLowestMarksStudent();
+	Student getLowestMarksStudent();
 	
 }
