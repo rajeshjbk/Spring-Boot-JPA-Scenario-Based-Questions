@@ -53,7 +53,7 @@ public class EmployeeTestRunner implements CommandLineRunner{
 					System.out.print("Enter Salary: ");
 					Double sal = Double.parseDouble(sc.nextLine());
 					
-					System.out.print("Enter Joining Data(YYYY-MM-DD): ");
+					System.out.print("Enter Joining Date(YYYY-MM-DD): ");
 					String date = sc.nextLine();
 					
 					LocalDate joiningDate = LocalDate.parse(date);
@@ -132,7 +132,7 @@ public class EmployeeTestRunner implements CommandLineRunner{
 					int pageSize = Integer.parseInt(sc.nextLine());
 					System.out.print("Enter page no which You want to see: ");
 					int pageNo = Integer.parseInt(sc.nextLine());
-					System.out.print("Enter Flight property which basis you want Sort: ");
+					System.out.print("Enter Employee property which basis you want Sort: ");
 					String props = sc.nextLine();
 					
 					System.out.print("Enter Sorting Order, For Ascending(true) / Descending(false): ");
