@@ -1,6 +1,5 @@
 package com.raj.entity;
 
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -39,7 +38,7 @@ public class Book {
 	private String genre;
 	
 	
-	@ManyToOne(targetEntity = Author.class, cascade = CascadeType.ALL)
+	@ManyToOne(targetEntity = Author.class, fetch = FetchType.LAZY)
 	@JoinColumn(name = "AUTHOR_ID", referencedColumnName = "AID")
 	private Author author; //HAS-A property to build Many to One Association
 	

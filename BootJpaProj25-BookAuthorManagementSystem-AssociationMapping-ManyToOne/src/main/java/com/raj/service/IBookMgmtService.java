@@ -11,5 +11,5 @@ public interface IBookMgmtService {
 	
 	String addBook(Book book);
 	List<Book> showAllBooks();
-	String deleteBookById(int id);
+	String deleteBookById(Integer id);
 }

@@ -6,4 +6,5 @@ import com.raj.entity.Book;
 
 public interface IBookRepository extends JpaRepository<Book, Integer> {
 
-}
+	long countByAuthorAid(Integer aid);}
+
